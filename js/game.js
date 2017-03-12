@@ -134,7 +134,6 @@ function showAutoComplete(results){
     }
     autocomplete.style.display = 'block';
     autocomplete.scrollTop = 0;
-    console.log('desilo se');
 }
 //function that hides auto complete div
 function hideAutoComplete(){
@@ -164,7 +163,6 @@ function initListeners(){
 //auto complete results when user is done with typing
 function doneTyping(){
     var cityInput = document.getElementById("city");
-    console.log('Done typing');
     var results = [];
     for(var i = 0; i < dataObj.ponudjene.length; i++)
     {
@@ -173,6 +171,5 @@ function doneTyping(){
         }
     }
     showAutoComplete(results);
-    console.log("Show Results", results);
 }
 
