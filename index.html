@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pogadjanje gradova</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+
+
+
+
+</head>
+<body>
+	<div id="overlay-screen">
+		<div class="col-md-6 col-md-offset-3 panel-startgame">
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Welcome to Guess Game!</h3>
+			  </div>
+			  <div class="panel-body panel-body-height">
+			    <p><b>Rules of Guess game:</b></p>
+			    <ol class="guess-game-list">
+			    	<li>Your goal is to guess Cities from choosen area.</li>
+			    	<li>You need to search Cities for given area by typing City name in field.</li>
+			    	<li>If you think you have all Cities names choosen, you will need to click button "See My Results" so you could see you score.</li>
+			    	<li>Don't forget that you have 1:40 seconds to complete the game.</li>
+			    </ol>
+			    <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
+			    	<button class="btn btn-success btn-start-game" onclick="startGame()">Start Game</button>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<h2 class="text-center">Guess City Game</h2>
+		</div>
+	</div>
+
+	<div class="container margin-top-bottom">
+		<div class="row">
+			<div class="col-md-7 input-filed">
+				<p class="float-left">Area: <span id="span-area"></span></p>
+				<p class="float-right"><span id="icon-time-color" class="icon-time glyphicon glyphicon-time"></span>
+					<span id="gameTime">0</span>
+				</p>
+					<input type="" id="city" placeholder="Type City Name" name="" disabled/>
+				<ul class="drop-down" id="autocomplete-div">
+				</ul>
+				<div class="button-space">
+					<button type="submit" id="" class="btn btn-primary" onclick="addToList()" disabled>Add City</button>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">List of Chosen Cities:</h3>
+				  </div>
+				  <div class="panel-body">
+				  	<ul class="chosen-list" id="cities_list">
+				  	</ul>
+				  </div>
+				</div>
+				<div class="button-space btn-finish">
+					<button type="button" id="endGame" onclick="endGame()" class="btn btn-success" disabled>See My Results</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+<script src="js/game.js"></script>
+</body>
+</html>

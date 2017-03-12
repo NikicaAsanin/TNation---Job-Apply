@@ -1,0 +1,112 @@
+.text-center{
+	text-align: center;
+}
+
+.input-filed > input{
+	width: 100%;
+	padding-left: 10px;
+	height: 35px;
+}
+
+.button-space{
+	margin: 10px auto;
+}
+
+.margin-top-bottom{
+	margin: 40px auto;
+}
+
+.chosen-list{
+	list-style: none;
+	font-size: 18px;
+    padding: 0px;
+    line-height: 30px;
+}
+.chosen-list li{
+	border-bottom: 1px solid #eee;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.icon-cities{
+	float: right;
+	color: red;
+	top: 7px;
+}
+.icon-cities:hover{
+	cursor: pointer;
+}
+#autocomplete-div{
+	display: none;
+}
+.drop-down{
+	width: 100%;
+    padding: 0px;
+    background: rgb(241, 241, 241);
+    color: #3e3e3e;
+    overflow-y: auto;
+    max-height: 130px;
+    list-style: none;
+}
+.drop-down li{
+	border-bottom: 1px solid #d2d2d2;
+	padding: 10px;
+}
+.drop-down li:hover{
+	cursor: pointer;
+	background: #ccc;
+	font-weight: bold;
+}
+.panel-body{
+	height: auto;
+}
+.btn-finish button{
+	width: 100%;
+}
+
+.bar-progress-results{
+	margin-top: 20px;
+}
+.progress-bar{
+	line-height: 40px;
+}
+.progress{
+	height: 40px;
+}
+
+.bar-results{
+	width: 50%;
+    min-width: 5%;
+    max-width: 100%;
+}
+.btnPlayAgain,
+.btn-start-game{
+	width: 100%;
+}
+
+.panel-startgame{
+	margin-top: 40px;
+}
+
+#overlay-screen {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.9);
+	z-index: 1;
+}
+.panel-title{
+	text-align: center;
+}
+.guess-game-list{
+	line-height: 30px;
+}
+.panel-body-height{
+	height: auto;
+}
+
+
+
